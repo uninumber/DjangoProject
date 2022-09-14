@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="">
+     <head>
+          <meta charset = 'utf-8'>
+          <meta http-equiv='X-UA-Compatible' content='IE-edge'>
+          <title>Buy cool new product</title>
+          <meta name='viewport' content='width=device-width, initial-scale=1'>
+          <!--<script scr='main.js'></script-->
+          <link rel="stylesheet" type="text/css" href="style.css">
+     </head>
+
+    <body style="background-color:#111111;color:#ffffff">
+
+    {% include 'navbar.html' %}
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% block content %}
+
+    {%endblock %}
+
+    </body>
+</html>

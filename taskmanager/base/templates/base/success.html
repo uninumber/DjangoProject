@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<html>
+<head>
+  <title>Thanks for your order!</title>
+      <div class="description Box-root">
+        <h3>The product was successfuly bought!</h3>
+      </div>
+    </div>
+    <form action="/" method="POST">
+      <input type="hidden" id="session-id" name="session_id" value="" />
+	  {% csrf_token %}
+      <button id="main.html" type="submit">Back to home page.</button>
+    </form>
+  </section>
+</body>
+</html>
+{% endblock content %}

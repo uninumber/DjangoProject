@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+{% block content %} 
+<style>
+    .room-container{
+    display:grid;
+    grid-template-columns: 3fr 1fr
+
+</style>
+
+
+<div class="room-container">
+
+    <div>
+
+
+        <div class="comment-wrapper">
+
+            <h3>SSD Kingston 128GB</h3>
+			<h4>Description:</h3>
+			<hr>
+			<p>Kingston’s A400 solid-state drive dramatically improves the responsiveness of your existing system with incredible boot, loading and transfer times compared to mechanical hard drives. Powered by a latest-gen controller for read and write speeds of up to 500MB/s and 450MB/s1, this SSD is 10x faster than a traditional hard drive for higher performance, ultra-responsive multi-tasking and an overall faster system. Also more reliable and durable than a hard drive, A400 is available in multiple capacities from 120GB–960GB2.<p>
+			<hr>
+			{% load static %}
+           <img src="{% static 'media/Kingston.jpg' %}"width="300" height="300">
+		   <hr>
+		   <h3>Keyboard HyperX</hr3>
+		   <h4>Description:</h4>
+		   <hr>
+		   <p>The HyperX Alloy Origins Core is an ultra-compact, sturdy tenkeyless keyboard featuring custom HyperX mechanical switches designed to give gamers the best blend of style, performance, and reliability. These key switches have exposed LEDs for stunning lighting with an actuation force and travel distance elegantly balanced for responsiveness and accuracy.</p>
+		   {% load static %}
+		   <img src="{% static 'media/hyperx.jpg' %}"width="300" height="300">
+
+			<form action="/checkout-session" method="POST">
+					{% csrf_token %}
+					<div class="container text-center">
+							<div class="btn-group-vertical w-75">
+					<button class=btn btn-primary btn-lg btn-block" style="margin-button: 10px">Buy</button>	
+							</div>
+					</div>
+					
+			</form>
+
+{% endblock %}
