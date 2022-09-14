@@ -36,9 +36,13 @@
 * **If you want to create room or to discuss you need to create account.**
 
 ### To run on Linux/Windows.
+```bash
+  python3 manage.py runserver/ python manage.py runserver
+```
 
-> **python3 manage.py runserver/ python manage.py runserver.**
+## Feedback
 
+If you have any feedback, please reach out to us at rustofdeveloper@gmail.com
 
 
 
