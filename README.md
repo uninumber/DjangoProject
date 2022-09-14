@@ -35,7 +35,7 @@
 
 ### To run on Linux/Windows.
 
-**python3 manage.py runserver/ python manage.py runserver.**
+> **python3 manage.py runserver/ python manage.py runserver.**
 
 
 
