@@ -33,6 +33,11 @@
 * **On the right sight you have a live comments**
 * **If you want to create room or to discuss you need to create account.**
 
+### To run on Linux/Windows.
+
+**python3 manage.py runserver/ python manage.py runserver.**
+
+
 
 
 
