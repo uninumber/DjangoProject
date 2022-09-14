@@ -24,6 +24,14 @@
 ## Remote connecting
 * It seems not secure website, but anyway (ALLOWED_HOSTS = ['0.0.0.0']/python3 manane.py runserver 0.0.0.0:8000), if it was mented to get access something like Heroku (double apologize)
 
+## About functional
+
+* **Left side consists of rooms where people can discuss about products.**
+* **Also you have a search to find needed room.**
+* **Available products is actually available products to buy.**
+* **On the middle you have live available rooms, where you can create your own or click on it and start discuss.**
+* **On the right sight you have a live comments**
+* **If you want to create room or to discuss you need to create account.**
 
 
 
