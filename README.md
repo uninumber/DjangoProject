@@ -15,7 +15,7 @@
 
 :heavy_plus_sign: **productRoom(page of products)**,
 
-:heavy_plus_sign: **admin.py (for reviews, it actually can be implemented for making simple review of products)**, 
+:heavy_plus_sign: **admin.py (for reviews, it's actually can be implemented for making simple reviews for products)**, 
 
 :heavy_plus_sign: **home.html**, 
 
