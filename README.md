@@ -11,12 +11,12 @@
 
 ## I'm not actually sure what explain here, cause everything was on website:)
 ## The most important files to check are: 
-* **views.py (implementation of actions)**, 
-* **productRoom(page of products)**,
-* **admin.py (for reviews, it actually can be implemented for making simple review of products)**, 
-* **home.html**, 
-* **success.html(after success purchase)**,
-* **room.html(My own initiative for reviews)**
+:heavy_plus_sign: **views.py (implementation of actions)**, 
+:heavy_plus_sign: **productRoom(page of products)**,
+:heavy_plus_sign: **admin.py (for reviews, it actually can be implemented for making simple review of products)**, 
+:heavy_plus_sign: **home.html**, 
+:heavy_plus_sign: **success.html(after success purchase)**,
+:heavy_plus_sign: **room.html(My own initiative for reviews)**
 
 ## About docker
 * **I build this by**
