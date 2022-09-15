@@ -1,4 +1,4 @@
-{% extends 'main.html' %}
+{% extends 'main.html' %} #bind to main page
 {% block content %} 
 <style>
     .room-container{
@@ -14,7 +14,9 @@
 
 
         <div class="comment-wrapper">
-
+		
+		#Just products description.
+		
             <h3>SSD Kingston 128GB</h3>
 			<h4>Description:</h3>
 			<hr>
@@ -28,10 +30,10 @@
 		   <hr>
 		   <p>The HyperX Alloy Origins Core is an ultra-compact, sturdy tenkeyless keyboard featuring custom HyperX mechanical switches designed to give gamers the best blend of style, performance, and reliability. These key switches have exposed LEDs for stunning lighting with an actuation force and travel distance elegantly balanced for responsiveness and accuracy.</p>
 		   {% load static %}
-		   <img src="{% static 'media/hyperx.jpg' %}"width="300" height="300">
+		   <img src="{% static 'media/hyperx.jpg' %}"width="300" height="300"> #img loading
 
 			<form action="/checkout-session" method="POST">
-					{% csrf_token %}
+					{% csrf_token %} #Token for relocating to page
 					<div class="container text-center">
 							<div class="btn-group-vertical w-75">
 					<button class=btn btn-primary btn-lg btn-block" style="margin-button: 10px">Buy</button>	
