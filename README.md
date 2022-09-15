@@ -21,7 +21,7 @@
 ## About docker
 * **I build this by**
 * > /snap/bin/docker build . -t docker-django
-*  **with input in file Dockerfile, and then stuck(sorry about that).
+*  **with input in file Dockerfile, and then stuck(sorry about that).**
 
 ## Remote connecting
 * It seems not secure website, but anyway (ALLOWED_HOSTS = ['0.0.0.0']/python3 manane.py runserver 0.0.0.0:8000), if it was mented to get access something like Heroku (double apologize)
