@@ -28,7 +28,7 @@
 
 ## About functional
 
-* **Left side consists of rooms where people can discuss about products.**
+* **The left side consists of room themes where people can discuss about products.**
 * **Also you have a search to find needed room.**
 * **Available products is actually available products to buy.**
 * **On the middle you have live available rooms, where you can create your own or click on it and start discuss.**
