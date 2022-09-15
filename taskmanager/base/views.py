@@ -1,3 +1,6 @@
+#the main code for the task at the bottom
+
+
 import os
 import stripe
 from django.shortcuts import render, redirect
@@ -44,7 +47,7 @@ def room(request, pk):
             user=request.user,
             room=room,
             body=request.POST.get('body')
-        )
+        ) #It presents content
         room.participants.add(request.user)
         return redirect('room', pk=room.id)
 
@@ -97,7 +100,7 @@ def home(request):
                'room_count': room_count,
                'room_messages': room_messages,
                }
-    return render(request, 'base/home.html', context)
+    return render(request, 'base/home.html', context) #This can be implemented for reviews on products.
 
 @login_required(login_url='/login')
 def createRoom(request):
@@ -142,7 +145,7 @@ def deleteRoom(request, pk):
     return render(request, 'base/delete.html', {'obj': room})
 
 
-@login_required(login_url='login')
+@login_required(login_url='login') #This will not allow if you are not registerd
 def deleteMessage(request, pk):
     message = Message.objects.get(id=pk)
 
@@ -163,7 +166,7 @@ def checkoutRoom(self):
     payment_method_types=['card'],
 
     line_items=[{
-        "price": "price_1LhwG8FPj4UkaHNH1j5e9LNo",
+        "price": "price_1LhwG8FPj4UkaHNH1j5e9LNo", #binds by ip(email and password(readme)
         
       
        'adjustable_quantity': {
@@ -182,7 +185,7 @@ def checkoutRoom(self):
             'maximum': 10,
             },
         'quantity':1,
-        }],
+        }], #quantity
 
     discounts=[{
     'coupon': 'IB5EWVQj',
@@ -198,19 +201,14 @@ def checkoutRoom(self):
   customer="cus_MQl9voKyImnFs3",
   items=[{'price': 'price_1LhtlcFPj4UkaHNH6zNgCjYh'}],
   coupon='CjfQGhuY',
-)
+) #binding coupon to customer and product(discount)
 
   return redirect(session.url, code=303)
 
-def productRoom(request):
-    num_books = Room.objects.all().count()
-    context = {
-        'num_books': num_books
-    }
-        
+def productRoom(request): #sending to productRoom page
     return render(request, 'base/productRoom.html', context=context)
 
-def successRoom(request):
+def successRoom(request): #sending you to success page after seccessful purchased
     return render(request, 'base/success.html')
 
 
