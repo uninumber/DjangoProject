@@ -1,5 +1,7 @@
 # DjangoProject
 ## Actually just making empty html page was not really cool, so i did this more readable.
+## Account rustofdeveloper@gmail.com/ElOUn;121s (products was binding by ip).
+
 ### This project has:
 * Login/Logout/Register functional (for making reviews on products)
 * GET /item/{id}
