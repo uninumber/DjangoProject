@@ -6,8 +6,8 @@
 * GET /buy/{id}
 * Docker build(just build(/snap/bin/docker build . -t docker-django)
 * Model Order with Discount
-* Admin Panel for discussions
-*remote connecting
+* Admin Panel for discussions(ligraus/Xz15062004)
+* remote connecting
 
 ## I'm not actually sure what explain here, cause everything was on website:)
 ## The most important files to check are: 
